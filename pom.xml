@@ -188,10 +188,16 @@
 				<directory>src/main/webapp</directory>
 			</testResource>
 		</testResources>
-		<properties>
-			<maven.compiler.source>1.6</maven.compiler.source>
-			<maven.compiler.target>1.6</maven.compiler.target>
-		</properties>
+		<plugins>
+		   <plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.5.1</version>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+		</plugins>
 		<finalName>devopssampleapplication</finalName>
 	</build>
 </project>
