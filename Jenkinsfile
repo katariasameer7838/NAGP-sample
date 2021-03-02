@@ -2,7 +2,7 @@ pipeline
 {
 	agent any
 		environment {
-			KUBECONFIG = '/Users/sameerkataria/.kube/config'
+			KUBECONFIG = '/Users/sameerkataria/priya0priya'
 		}
 		tools
 		{
@@ -13,7 +13,7 @@ pipeline
 	{
 		timestamps()
 		
-		timeout(time: 1, unit: 'HOURS')
+		timeout(time: 1, unit: 'MINUTES')
 		
 		skipDefaultCheckout()
 		

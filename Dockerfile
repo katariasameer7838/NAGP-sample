@@ -1,5 +1,5 @@
 FROM tomcat:8.0
-MAINTAINER sameer.kataria@nagarro.com
+MAINTAINER prpr00001@nagarro.com
 RUN rm -rf /usr/local/tomcat/webapps/*
 COPY ./target/devopssampleapplication.war /usr/local/tomcat/webapps/sameerkataria.war
 EXPOSE 8080
